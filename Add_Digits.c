@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+    int c,a,b=0,i,sum=0;
+    scanf("%d",&a);
+    c=a;
+    while(1)
+    {   
+        sum=0;
+        if(a<10)
+        {
+            printf("%d",c);
+            break;
+        }
+        else
+        {
+            while(1)
+            {
+                b=c%10;
+                c=c/10;
+                sum+=b;
+                if(c==0)
+                {
+                    c=sum;
+                    a=sum;
+                    break;
+                }
+            }
+        }
+    }
+}
