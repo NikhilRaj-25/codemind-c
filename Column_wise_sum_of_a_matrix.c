@@ -1,18 +1,18 @@
 #include<stdio.h>
 int main(){
-    int a,b,i,j,ans=0;
-    scanf("%d %d",&a,&b);
-    int arr[a][b],x=a-1;
+    int a,b,i,j,s=0;
+    scanf("%d%d",&a,&b);
+    int arr[a][b];
     for(i=0;i<a;i++){
         for(j=0;j<b;j++){
             scanf("%d",&arr[i][j]);
         }
     }
     for(i=0;i<b;i++){
-        int sum=0;
+        s=0;
         for(j=0;j<a;j++){
-            sum+=arr[j][i];
+            s+=arr[j][i];
         }
-        printf("%d ",sum);
+        printf("%d ",s);
     }
 }
